@@ -24,6 +24,12 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import DefaultLayout from './layouts/DefaultLayout.vue'
+import { useSettingStore } from '@/settings'
+import { onMounted } from 'vue';
+
+// Load settings on app startup
+const settingStore = useSettingStore()
+onMounted(() => settingStore.loadSettings())
 </script>
 
 <style scoped>
