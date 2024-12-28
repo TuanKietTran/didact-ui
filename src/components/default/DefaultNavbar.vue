@@ -274,8 +274,6 @@
 </template>
 
 <script setup lang="ts">
-// Receive props and emit events from the parent
-import { defineProps, defineEmits } from 'vue'
 
 defineProps({
   isDarkMode: {
